@@ -1,0 +1,55 @@
+
+<nav class="navbar">
+  <div class="navbar-container">
+
+    <!-- Logo -->
+    <a class="logo" routerLink="/">
+      NOVA<span>3D</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <ul class="nav-links">
+      <li>
+        <a routerLink="/" routerLinkActive="active"
+           [routerLinkActiveOptions]="{ exact: true }">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a routerLink="/shop" routerLinkActive="active">
+          Shop
+        </a>
+      </li>
+
+      <li>
+        <a routerLink="/collections" routerLinkActive="active">
+          Collections
+        </a>
+      </li>
+
+      <li>
+        <a routerLink="/about" routerLinkActive="active">
+          About
+        </a>
+      </li>
+    </ul>
+
+    <!-- Actions -->
+    <div class="nav-actions">
+      <button class="icon-btn" aria-label="Search">
+        <span>⌕</span>
+      </button>
+
+      <button class="icon-btn cart-btn" aria-label="Shopping cart">
+        <span>🛒</span>
+        <small>0</small>
+      </button>
+
+      <button class="menu-btn" aria-label="Open menu">
+        ☰
+      </button>
+    </div>
+
+  </div>
+</nav>
