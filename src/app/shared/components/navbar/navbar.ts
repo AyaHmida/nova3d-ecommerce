@@ -8,7 +8,8 @@ import {
  imports: [
     RouterLink,
     RouterLinkActive
-  ],  templateUrl: './navbar.html',
+  ],
+    templateUrl: './navbar.html',
   styleUrl: './navbar.scss',
 })
 export class Navbar {}
