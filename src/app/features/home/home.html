@@ -1,1 +1,309 @@
-<p>home works!</p>
+<main class="home">
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <!-- Background effects -->
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+
+    <!-- LEFT CONTENT -->
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        <span></span>
+        PREMIUM FURNITURE
+      </div>
+
+      <h1>
+        Modern Comfort.
+        <strong>Timeless Design.</strong>
+      </h1>
+
+      <p class="hero-description">
+        Discover the perfect balance between elegance and comfort
+        with our premium furniture collection. Explore in 3D,
+        customize your style, and bring luxury into your space.
+      </p>
+
+      <!-- Price -->
+      <div class="product-meta">
+
+        <span class="price">
+          $799.00
+        </span>
+
+        <div class="rating">
+          <span class="stars">★★★★★</span>
+          <span>4.8</span>
+          <span class="reviews">(124 reviews)</span>
+        </div>
+
+      </div>
+
+      <!-- Buttons -->
+      <div class="hero-actions">
+
+        <button class="btn btn-primary">
+          <span class="cart-icon">🛒</span>
+          Add to Cart
+        </button>
+
+        <button class="btn btn-outline">
+          View Details
+          <span>→</span>
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- CENTER PRODUCT -->
+    <div class="product-showcase">
+
+      <div class="product-orbit">
+
+        <div class="orbit orbit-1"></div>
+
+        <div class="orbit-arrow">
+          ↻
+        </div>
+
+        <span class="degree">
+          360°
+        </span>
+
+      </div>
+
+      <!-- Product -->
+      <div class="product-image-wrapper" [class.is-loading]="loading">
+
+        <div class="product-light"></div>
+
+        <canvas #productCanvas></canvas>
+
+        @if (loading) {
+          <span class="viewer-status">Loading model</span>
+        }
+
+        @if (loadError) {
+          <span class="viewer-status viewer-status-error">Unable to load model</span>
+        }
+
+
+      </div>
+
+      <!-- Platform -->
+      <div class="platform">
+
+        <div class="platform-light"></div>
+
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT FEATURES -->
+    <div class="product-features">
+
+      <div class="feature-item">
+
+        <div class="feature-icon">
+          ↻
+        </div>
+
+        <div>
+          <h3>360° View</h3>
+          <p>Rotate & explore</p>
+        </div>
+
+      </div>
+
+
+      <div class="feature-item">
+
+        <div class="feature-icon">
+          ⛶
+        </div>
+
+        <div>
+          <h3>AR Mode</h3>
+          <p>See in your space</p>
+        </div>
+
+      </div>
+
+
+      <div class="feature-item">
+
+        <div class="feature-icon">
+          ✎
+        </div>
+
+        <div>
+          <h3>Customize</h3>
+          <p>Colors & materials</p>
+        </div>
+
+      </div>
+
+
+      <div class="feature-item">
+
+        <div class="feature-icon">
+          ◈
+        </div>
+
+        <div>
+          <h3>High Quality</h3>
+          <p>4K textures</p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- BOTTOM LEFT THUMBNAILS -->
+    <div class="product-thumbnails">
+
+      <button class="thumbnail active">
+        <img
+          src="/images/nova-chair.jpg"
+          alt="Chair front view"
+        />
+      </button>
+
+      <button class="thumbnail">
+        <img
+          src="/images/nova-chair-marron.png"
+          alt="Chair second view"
+        />
+      </button>
+
+      <button class="thumbnail">
+        <img
+          src="/images/nova-chair-baj.png"
+          alt="Chair side view"
+        />
+      </button>
+
+      <button class="thumbnail">
+        <img
+          src="/images/nova-chair-gris.png"
+          alt="Chair detail"
+        />
+      </button>
+
+    </div>
+
+
+    <!-- MATERIALS -->
+    <div class="materials">
+
+      <span class="materials-title">
+        Choose your material
+      </span>
+
+      <div class="material-options">
+
+        <button
+          class="material black active"
+          aria-label="Black"
+        ></button>
+
+        <button
+          class="material wood"
+          aria-label="Walnut"
+        ></button>
+
+        <button
+          class="material beige"
+          aria-label="Beige"
+        ></button>
+
+        <button
+          class="material grey"
+          aria-label="Grey"
+        ></button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SECOND SECTION -->
+  <section class="featured">
+
+    <div class="section-heading">
+
+      <div>
+        <span>EXPLORE OUR COLLECTION</span>
+
+        <h2>
+          Designed to be
+          <strong>experienced.</strong>
+        </h2>
+      </div>
+
+      <button class="view-all">
+        View all products →
+      </button>
+
+    </div>
+
+
+    <div class="collection-grid">
+
+      <article class="collection-card">
+
+        <div class="collection-image">
+          <div class="fake-product">CHAIR</div>
+        </div>
+
+        <div class="collection-info">
+          <span>Furniture</span>
+          <h3>Nova Lounge Chair</h3>
+          <strong>$799</strong>
+        </div>
+
+      </article>
+
+
+      <article class="collection-card">
+
+        <div class="collection-image">
+          <div class="fake-product">TABLE</div>
+        </div>
+
+        <div class="collection-info">
+          <span>Furniture</span>
+          <h3>Orbit Coffee Table</h3>
+          <strong>$549</strong>
+        </div>
+
+      </article>
+
+
+      <article class="collection-card">
+
+        <div class="collection-image">
+          <div class="fake-product">SPEAKER</div>
+        </div>
+
+        <div class="collection-info">
+          <span>Technology</span>
+          <h3>Nova Sound X</h3>
+          <strong>$299</strong>
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+</main>
